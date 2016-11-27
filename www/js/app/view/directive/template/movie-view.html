@@ -1,0 +1,14 @@
+<div class="item item-head">
+    <h2>{{originaltitle}}</h2>
+    <h4>{{genre}}</h4>
+    <h4>{{releasedate | date:'MM/dd/yyyy'}}</h4>
+</div>
+<div class="item item-image">
+    <img class="image-responsive" ng-src="{{imageurlw500}}{{posterpath}}"
+         onerror="this.src='img/no_image.png';" />
+</div>
+
+<div class="item item-body">
+    <h3>Overview</h3>
+    <p>{{overview}}</p>
+</div>

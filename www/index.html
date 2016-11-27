@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Upcoming Movies App</title>
+        <link rel="manifest" href="manifest.json">
+        <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <!-- cordova script (this will be a 404 during development) -->
+        <script src="cordova.js"></script>
+        <!-- ionic/angularjs js -->
+        <script src="lib/ionic/js/ionic.bundle.js"></script>
+    </head>
+
+    <body ng-app="upcoming-movies">
+        <ion-nav-bar class="bar-positive">
+            <ion-nav-back-button class="button-clear">
+                <i class="ion-arrow-left-c"></i>
+            </ion-nav-back-button>
+        </ion-nav-bar>
+        <ion-nav-view></ion-nav-view>
+    </body>
+
+    <script src="lib/angular-resource/angular-resource.min.js"></script>
+    <!-- your app's js -->
+    <script src="js/modules/app.js"></script>
+    <script src="js/modules/service.js"></script>
+    <script src="js/modules/directive.js"></script>
+    <script src="js/modules/config.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/route.js"></script>
+
+    <script src="js/app/common/service/common-service.js"></script>
+    <script src="js/app/list/controller/list-controller.js"></script>
+    <script src="js/app/list/directive/list-directive.js"></script>
+    <script src="js/app/list/service/list-service.js"></script>
+    <script src="js/app/view/controller/view-controller.js"></script>
+    <script src="js/app/view/directive/view-directive.js"></script>
+    <script src="js/app/view/service/view-service.js"></script>
+
+</html>

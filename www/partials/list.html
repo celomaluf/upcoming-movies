@@ -1,0 +1,19 @@
+<ion-view view-title="Upcoming Releases">
+    <ion-content>
+        <label class="item item-input">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="search" placeholder="Search" ng-model="filtro" ng-model-options="{debounce: 500}" >
+        </label>
+
+        <ion-list>
+            <movie-list item="group" ng-repeat="movie in movies | filter: {original_title: filtro}" movieid={{movie.id}}
+                        imageurlw92="{{imageURLw92}}" posterpath="{{movie.poster_path}}" originaltitle="{{movie.original_title}}"
+                        genre="{{movie.genre}}" releasedate="{{movie.release_date}}">
+
+            </movie-list>
+            <ion-infinite-scroll immediate-check="true"
+                                 on-infinite="keepLoading()" >
+            </ion-infinite-scroll>
+        </ion-list>
+    </ion-content>
+</ion-view>

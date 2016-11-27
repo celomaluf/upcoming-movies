@@ -1,0 +1,7 @@
+<ion-item class="item-thumbnail-left" href="#/view/{{movieid}}">
+    <img ng-src="{{imageurlw92}}{{posterpath}}"
+         onerror="this.src='img/no_image.png';" />
+    <h2>{{originaltitle}}</h3>
+    <h4>{{genre}}</h5>
+    <h4>{{releasedate | date:'MM/dd/yyyy'  }}</h4>
+</ion-item>

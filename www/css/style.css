@@ -1,0 +1,15 @@
+.item h2 {
+    font-weight: bold;
+    padding-bottom: 1px;
+}
+
+.item-image img:first-child, .item-image .list-img {
+  width: 250px;
+}
+.item-image {
+    background: #000;
+}
+
+.item p {
+    text-align: justify;
+}
